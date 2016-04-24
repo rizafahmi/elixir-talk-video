@@ -9,3 +9,8 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+alias Talks.Repo
+alias Talks.Talk
+
+Repo.insert! %Talk{presenter: "BukaLapak Team", title: "Experience with Elixir"}
+Repo.insert! %Talk{presenter: "Riza Fahmi", title: "Brief Intro to Phoenix, Elixir Web Framework"}

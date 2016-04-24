@@ -1,0 +1,11 @@
+LOG:  database system was shut down at 2016-04-23 10:56:56 SGT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+ERROR:  database "talks_dev" already exists
+STATEMENT:  CREATE DATABASE "talks_dev" ENCODING='UTF8'
+ERROR:  relation "talks" already exists
+STATEMENT:  CREATE TABLE "talks" ("id" serial PRIMARY KEY, "title" varchar(255), "presenter" varchar(255), "inserted_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
+ERROR:  database "talks_dev" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE "talks_dev"
