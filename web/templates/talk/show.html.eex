@@ -1,0 +1,18 @@
+<h2>Show talk</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @talk.title %>
+  </li>
+
+  <li>
+    <strong>Presenter:</strong>
+    <%= @talk.presenter %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: talk_path(@conn, :edit, @talk) %>
+<%= link "Back", to: talk_path(@conn, :index) %>
