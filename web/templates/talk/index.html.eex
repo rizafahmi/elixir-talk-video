@@ -1,3 +1,9 @@
+<h2>Discuss</h2>
+
+<div id="messages" class="well"></div>
+<input id="chat-input" type="text" class="form-control" placeholder="your message"></input>
+
+
 <h2>Listing talks</h2>
 
 <table class="table">
